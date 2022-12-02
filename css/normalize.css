@@ -13,10 +13,11 @@ html {
 }
 
 /**
- * Remove default margin.
+ * Remove default padding and margin.
  */
 
 body {
+  padding: 0;
   margin: 0;
 }
 

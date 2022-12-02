@@ -42,6 +42,10 @@ img {
 Base Layout Styles
 ================== */
 
+.bold {
+	font-weight: 600;
+}
+
 .center {
 	display: block;
 	margin-left: auto;
@@ -54,7 +58,6 @@ Base Layout Styles
 	padding: 15px 5px 15px 5px;
 	text-align: center;
 } 
-
 
 .div-intro img {
 	display: block;
@@ -180,11 +183,15 @@ Base Layout Styles
 
 }
 
+.name {
+	font-weight: 800;
+}
+
 /* =================
 Media Queries
 ================== */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
 	.div {
 		display: flex;
@@ -206,6 +213,7 @@ Media Queries
 
 	.div-intro img {
 		padding: 10px 20px 30px 10px;
+		margin-top: 5em;
 		height: 40%;
 		width: 40%;
 	}
@@ -217,7 +225,7 @@ Media Queries
 		font-size: 1.25em;
 		height: 60%;
 		width: 80%;
-		margin: 10px 0px 10px 20px;
+		/* margin: 10px 0px 10px 20px; */
 	}
 
 	.div-skills li {
@@ -303,16 +311,9 @@ Media Queries
 
 }
 
-@media (min-width: 1024px) {
-	
-	.div-header {
-		margin: 10px 10px 10px 10px;
-		padding: 10px 10px 10px 10px;
-	}
-
+@media only screen and (min-width: 1024px) {
 	.div-intro {
 		font-size: 1.3em;
-		padding: 10px 20px 10px 10px;
 	}
 
 	.div-intro img {
@@ -321,20 +322,30 @@ Media Queries
 		padding: 15px 15px 15px 15px;
 	}
 
+	.footer-name {
+		font-size: 1em;
+	}
+
+	 .intro {
+		padding: -4em;
+	}
+
 	.name {
 		display: inline-block;
 		margin: 10px 10px 10px 20px;
 		text-align: left;
+		font-size: 2em;
+		font-weight: 600;
 	}
 
 	.header {
 	padding: 10px 10px 10px 10px;
+	display: flex;
 	}
 
 	.intro {
-		text-align: left;
-		float: left;
-		padding: 0px 10px 0px 10px;
+		text-align: center;
+		padding: 4em;
 	}
 
 	.flex-middle {
@@ -353,8 +364,8 @@ Media Queries
 		margin: 35px 0px 0px 0px;
 	}
 
-	.nav {
-		float: right;
+	.header nav {
+		margin-left: auto;
 	}
 
 	.p-contact {
